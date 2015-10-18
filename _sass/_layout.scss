@@ -4,14 +4,15 @@
 .site-header {
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
+    min-height: 50vh;
 
     // Positioning context for the mobile navigation icon
     position: relative;
 }
 
 .site-title {
-    font-size: 26px;
+    font-size: 80px;
+    color: #ffffff;
     line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
@@ -19,7 +20,7 @@
 
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: $grey-color-light;
     }
 }
 
@@ -94,6 +95,7 @@
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+    background-color: #FFFFFF;
 }
 
 .footer-heading {
@@ -163,6 +165,8 @@
  */
 .page-content {
     padding: $spacing-unit 0;
+    background-color: #FFFFFF;
+    min-height: 25vh;
 }
 
 .page-heading {
@@ -233,4 +237,38 @@
             font-size: 18px;
         }
     }
+}
+
+/**
+* PARALLAX CRAP
+*/
+.parallax {
+  perspective: 1px;
+  perspective-origin-x: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin-x: 100%;
+}
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+.parallax__layer--back {
+    transform: translateZ(-1px) scale(2);
+    /*background-image: url(../images/header_back.jpg);
+    background-size: 100%;*/
 }

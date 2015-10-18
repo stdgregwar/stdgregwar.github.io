@@ -2,11 +2,11 @@
 title: std::gregwar
 email: gregoire.hirt@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Grégoire (std::gregwar) is a swiss programmer,
+  I, Grégoire (std::gregwar), am a swiss programmer,
   currently learning computer science at EPFL.
-  Devoted to OpenGL and all kind of graphical
-  applications, he loves everything as long as
-  this is visual or musical.
+  Devoted to OpenGL and all kind of graphical and audio
+  applications, I'm very into eye candy, procedural
+  generation and simulations.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://stdgregwar.github.io" # the base hostname & protocol for your site
 github_username:  stdgregwar
