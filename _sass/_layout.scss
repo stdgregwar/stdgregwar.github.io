@@ -6,23 +6,34 @@
 .site-header {
     /*border-top: 5px solid $grey-color-dark;*/
     /*border-bottom: 1px solid $grey-color-light;*/
-    min-height: 20vh;
+    min-height: 5vh;
+    margin: 0 auto;
+    margin-top: -30vh;
+    text-align: center;
 
     // Positioning context for the mobile navigation icon
     position: relative;
 }
 
 .site-title {
-    font-size: 80px;
+    font-size: 600%;
+    position: relative;
+    
     color: #ffffff;
     line-height: 56px;
     letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
+    /*margin-bottom: 0;*/
+	margin: 0 auto;
+	margin-top: -20vh;
+	width: 50vw;
+	text-decoration: none !important;
 
     &,
     &:visited {
         color: $grey-color-light;
+    }
+    &:hover {
+		color: $brand-color;
     }
 }
 
@@ -30,8 +41,8 @@
     z-index: 5;
     position: fixed;
     line-height: 4vh;
-    /*border-top: 2px solid #333355; */
-    /*border-bottom: 2px solid #001870;*/
+    /*border-top: 2px solid $grey-color-light;*/
+    border-bottom: 3px solid $grey-color-dark;
     min-width: 100vw;
     background-color: $background-color; 
     color: #ffffff;
@@ -100,11 +111,12 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
+    border-top: 1px solid $grey-color;
     padding: $spacing-unit 0;
     background-color: $background-color; 
-    max-width: 70vw;
+	width: 100vw;
     margin: 0 auto;
+	margin-top: 10vh;
 }
 
 .footer-heading {
@@ -178,6 +190,7 @@
     min-height: 25vh;
     width: 70vw;
     margin: 0 auto;
+    border-radius: 15px;
 }
 
 .page-heading {
@@ -271,6 +284,7 @@
 
 .parallax__layer {
   position: relative;
+  width: 100vw;
   top: 0;
   right: 0;
   bottom: 0;
@@ -286,7 +300,20 @@
 }
 
 .parallax__layer--back {
+	height: 100vh;
     transform: translateZ(-2px) scale(3);
-    /*background-image: url(../images/header_back.jpg);
+    /*background-image: url(/images/header_back.jpg);
+    background-repeat: no-repeat;
     background-size: 100%;*/
+}
+
+.backgrad {
+	position: relative;
+	margin-top: -80vh;
+	background: linear-gradient(to bottom, rgba(255,0,0,0), $true-back-color); /*Standard*/
+	height: 80vh;
+}
+
+.background__image {
+	width: 100vw;
 }
