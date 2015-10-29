@@ -10,9 +10,10 @@
     margin: 0 auto;
     margin-top: -30vh;
     text-align: center;
+    width: 100vw;
 
     // Positioning context for the mobile navigation icon
-    position: relative;
+    position: absolute;
 }
 
 .site-title {
@@ -24,7 +25,6 @@
     letter-spacing: -1px;
     /*margin-bottom: 0;*/
 	margin: 0 auto;
-	margin-top: -20vh;
 	width: 50vw;
 	text-decoration: none !important;
 
@@ -42,7 +42,8 @@
     position: fixed;
     line-height: 4vh;
     /*border-top: 2px solid $grey-color-light;*/
-    border-bottom: 3px solid $grey-color-dark;
+    border-bottom: 3px solid darken($grey-color-dark,4);
+    border-radius: 0 0 8px 8px;
     min-width: 100vw;
     background-color: $background-color; 
     color: #ffffff;
@@ -111,10 +112,11 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color;
+    border-top: 2px solid $grey-color;
+    border-radius: 16px 16px 0 0;
     padding: $spacing-unit 0;
     background-color: $background-color; 
-	width: 100vw;
+	width: 100%;
     margin: 0 auto;
 	margin-top: 10vh;
 }
@@ -185,12 +187,17 @@
  * Page content
  */
 .page-content {
+	border-top: 2px solid $grey-color;
+	border-bottom: 2px solid darken($grey-color-dark,2);
+    //border-radius: 32px 32px 0 0;
+	position: relative;
     padding: $spacing-unit 0;
     background-color: $background-color; 
     min-height: 25vh;
-    width: 70vw;
+    width: 95%;
+    max-width: 1024px;
     margin: 0 auto;
-    border-radius: 15px;
+    border-radius: 8px;
 }
 
 .page-heading {
