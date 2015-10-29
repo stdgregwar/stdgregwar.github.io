@@ -8,7 +8,12 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-
+/**
+ * Smooth Scrolling
+ */
+html {
+    scroll-behavior: smooth
+}
 
 /**
  * Basic styling

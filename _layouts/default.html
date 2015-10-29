@@ -15,17 +15,14 @@
           {% include header.html %}
         </div>
         <div class="parallax__layer parallax__layer--base">
-          <div class="page-content">
+          <div id="content" class="page-content">
             <div class="wrapper">
                 {{ content }}
-                <ul>
-                    {% for post in site.posts %}
-                    <li>
-                        <a href="{{ post.url }}">{{ post.title }}</a>
-                        <p>{{ post.excerpt }}</p>
-                    </li>
-                    {% endfor %}
-                </ul>
+				<!--{% for post in site.posts %}
+					{% if post.title %}
+						<a class="post-link" href="{{ post.url | prepend: post.baseurl }}#content">{{ post.title }}</a>
+					{% endif %}
+				{% endfor %}-->
             </div>
           </div>
           {% include footer.html %}
